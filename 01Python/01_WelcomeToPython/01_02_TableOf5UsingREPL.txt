@@ -1,0 +1,8 @@
+-   Open cmd
+-   write "python" and press enter to open py REPL
+-   write 5*1 and press enter
+-   output will be 5
+-   write 5*2 and press enter
+-   output will be 10 and so
+-   repeat process for 10 time till output 50
+-   press ctrl + z to exit from REPL

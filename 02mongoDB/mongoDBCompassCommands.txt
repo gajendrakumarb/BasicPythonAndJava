@@ -1,0 +1,108 @@
+pip install pymongodb
+
+MongoDB Compass Commands to run on terminal
+
+1. Database Commands
+
+    a.  View all databases
+            show dbs
+
+    b.  Create a new or switch databases 
+            use dbName
+
+    c.  View current Database
+            db
+
+    d.  Delete Database 
+            db.dropDatabase()
+
+2. Collection Commands
+
+    a.  Show Collections
+            show collections
+
+    b.  Create a collection
+            db.createCollection('collection_name')
+
+    c.  Drop a collection
+            db.collection_name.drop()
+
+3. Row(Document) Commands
+
+    a.  Show all Rows in a Collection 
+            db.collection_name.find()
+
+    b.  Show all Rows in a Collection (Prettified)
+            db.collection_name.find().pretty()
+
+    c.  Find the first row matching the object
+            db.collection_name.findOne({field_name: 'value'})
+
+    d.  Insert One Row
+            db.collection_name.insert({
+                'lang_name': 'Python',
+                'version': '3.0.4',
+                'no_connections': 2
+                })
+
+    e.  Insert many Rows
+
+            db.collection_name.insertMany([{
+                'lang_name': 'Python',
+                'version': '3.0.4',
+                'no_projects': 2
+                }, 
+                {'lang_name': 'C++',
+                'version': 'basic',
+                'no_projects': 12
+                },
+                {'lang_name': 'C',
+                'version': 'basic',
+                'no_projects': 32
+            }])
+
+        f. Update a row
+
+            db.collection_name.updateOne({name: 'c'},
+                {$set: {'lang_name': 'Ruby',
+                    'no_projects': 0
+                }}, {upsert: true})
+
+
+        g.  Delete Row 
+
+                db.collection_name.remove({lang_name: 'java'})
+        
+
+4.  Mongodb Increment Operator
+
+        db.collection_name.update({lang_name: 'c'},
+        {$inc:{
+            member_since: 2
+        }})
+
+
+5.  Search in a MongoDb Database
+
+    a.  Search with filter field_name
+
+            db.collection_name.find({lang:'Python'})
+
+    b.  Limit the number of rows in output
+
+            db.collection_name.find().limit(2)
+
+    c.  Count the number of rows in the output
+
+            db.collection_name.find().count()
+
+    d.  Less than/Greater than/ Less than or Eq/Greater than or Eq
+
+            db.collection_name.find({member_since: {$lt: 90}})
+
+            db.collection_name.find({member_since: {$lte: 90}})
+
+            db.collection_name.find({member_since: {$gt: 90}})
+
+            db.collection_name.find({member_since: {$gte: 90}})
+

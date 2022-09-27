@@ -1,0 +1,6 @@
+Module to read pdf file using python
+-   https://stackoverflow.com/questions/34837707/how-to-extract-text-from-a-pdf-file?page=1&tab=scoredesc#tab-top
+-   tika module is used to 
+-   open cmd
+-   write "pip install tika"
+-   write python code to read text from particular pdf

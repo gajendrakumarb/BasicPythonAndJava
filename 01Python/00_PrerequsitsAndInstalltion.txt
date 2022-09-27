@@ -1,0 +1,28 @@
+
+1.	Byte of Python Book
+
+
+2.	Prepare your system: 
+	a.	Install Python
+		Installtion issue
+		*	api-ms-win-crt-runtime is missing
+			- https://answers.microsoft.com/en-us/windows/forum/all/how-to-fix-api-ms-win-crt-runtime-l1-1-0dll-is/faffd6b5-b35b-4c41-bda0-fae33ed80b87
+
+	b.	Install .Net 4.8 (for VS code and git)
+		-	Error 0x800713ec: Process returned error: 0x13ec Error 0x800713ec: Failed to execute EXE package.
+		-	https://stackoverflow.com/questions/53724634/error-0x800713ec-asia-when-installing-net-framework-4-7-2-targeting-pack
+	c.	Install VS Code
+	d.	Install git
+	e.	Configre github profile
+	e.	Learn to use git
+		-	Basic - https://www.youtube.com/watch?v=eGaImwD8fPQ
+		-	Detailed - https://www.youtube.com/watch?v=RGOj5yH7evk
+	f.	Learn to use licenses in GitHub
+		-	https://articles.opexflow.com/en/programming/github-license-choos.htm
+	
+
+3.	Code with Harry py 
+	a.	https://www.youtube.com/watch?v=gfDE2a7MKjA
+
+
+
